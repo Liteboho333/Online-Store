@@ -136,11 +136,13 @@
   <p>&copy; 2025 Dees's Jacket Store. All rights reserved.</p>
 </footer>
 
-<script>
-  function buyNow(product) {
-    alert("Redirecting to payment for " + product);
-    // window.location.href = "https://your-payment-link.com";
-  }
+script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
 </script>
 
 <!-- Made by Liteboho -->
