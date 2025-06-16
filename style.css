@@ -19,7 +19,7 @@ header {
 }
 
 .menu-toggle {
-  background-color: maroon;
+  background-color: white;
   color: white;
   border: none;
   padding: 10px;
@@ -43,7 +43,7 @@ header {
 }
 
 .hero {
-  background-image: url('istockphoto-1089596752-1.jpg');
+  background-image: url( 'istockphoto-1089596752-1.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -57,7 +57,7 @@ header {
 .shop-button {
   margin-top: 20px;
   padding: 12px 24px;
-  background-color: maroon;
+  background-color: red;
   color: white;
   text-decoration: none;
   font-size: 16px;
