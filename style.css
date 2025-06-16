@@ -1,4 +1,4 @@
-/* Reset some default styles */
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -21,29 +21,32 @@ body {
   align-items: center;
   text-align: center;
   color: white;
-  position: relative;
 }
 
-/* Navigation Menu */
+/* Navigation */
 nav {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 20px;
+  text-align: right;
 }
 
-nav a {
+nav a:link,
+nav a:visited {
   color: white;
   margin: 0 10px;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s;
 }
 
 nav a:hover {
   color: #ff6f61;
 }
 
-/* Headline and Text */
+/* Hero Text */
 .hero h1 {
   font-size: 3em;
   margin-bottom: 10px;
@@ -54,7 +57,7 @@ nav a:hover {
   margin-bottom: 30px;
 }
 
-/* Shop Now Button */
+/* Shop Button */
 .shop-button {
   background-color: #ff6f61;
   color: white;
@@ -64,7 +67,6 @@ nav a:hover {
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
-  transition: background-color 0.3s;
 }
 
 .shop-button:hover {
