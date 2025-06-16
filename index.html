@@ -2,99 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DEE'S JACKETS</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #121212;
-      color: white;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background: white;
-      padding: 1rem 2rem;
-    }
-
-    h1 {
-      margin: 0;
-    }
-
-    nav {
-      margin-top: 10px;
-    }
-
-    #menu-toggle {
-      background-color: #6d4c41;
-      color: white;
-      border: none;
-      padding: 10px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-    #nav-links {
-      display: none;
-      margin-top: 10px;
-    }
-
-    #nav-links.show {
-      display: block;
-    }
-
-    #nav-links a {
-      color: #d3aefc;
-      display: block;
-      text-decoration: none;
-      margin: 5px 0;
-    }
-  
-    main {
-      padding: 2rem;
-    }
-
-    footer {
-      background: #1a1a1a;
-      padding: 1rem;
-      text-align: center;
-      margin-top: 2rem;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dee's Jackets</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <header>
-    <h1>DEE'S JACKETS</h1>
-    <nav>
-      <button id="menu-toggle">Menu</button>
-      <div id="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="shop.html">Shop</a>
-        <a href="contact.html">Contact</a>
-      </div>
+    <div class="logo">DEE'S JACKETS</div>
+    <button class="menu-toggle">Menu</button>
+    <nav class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="shop.html">Shop</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
-  
-   <main>
-    <h2>WELCOME TO DEE’S JACKETS</h2>
-    
-      <p>High-quality jackets for every season. Stylish. Warm. Affordable.</p>
+
+  <!-- Hero section with background image -->
+  <section class="hero">
+    <h1>WELCOME TO DEE’S JACKETS</h1>
+    <p>High-quality jackets for every season. Stylish. Warm. Affordable.</p>
+    <a href="shop.html" class="shop-button">Shop Now</a>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Dee's Jacket Store</p>
+    <p>© 2025 Dee's Jacket Store</p>
   </footer>
 
   <script>
-    const menuToggle = document.getElementById('menu-toggle');
-    const navLinks = document.getElementById('nav-links');
-
-    menuToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('show');
+    // Toggle nav menu on small screens
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".nav-links");
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("show");
     });
   </script>
 </body>
-</html>
+    </html>
