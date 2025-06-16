@@ -1,15 +1,47 @@
-/* General Reset */
-* {
+body, html {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font-family: sans-serif;
+  color: white;
 }
 
-body {
-  font-family: Arial, sans-serif;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  padding: 15px;
 }
 
-/* Hero Section */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  background-color: maroon;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.nav-links {
+  display: none;
+  flex-direction: column;
+  background-color: #111;
+}
+
+.nav-links.show {
+  display: flex;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
 .hero {
   background-image: url('istockphoto-1089596752-1.jpg');
   background-size: cover;
@@ -20,55 +52,21 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
 }
 
-/* Navigation */
-nav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 10px 20px;
-  text-align: right;
-}
-
-nav a:link,
-nav a:visited {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  color: #ff6f61;
-}
-
-/* Hero Text */
-.hero h1 {
-  font-size: 3em;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: 1.2em;
-  margin-bottom: 30px;
-}
-
-/* Shop Button */
 .shop-button {
-  background-color: #ff6f61;
-  color: white;
+  margin-top: 20px;
   padding: 12px 24px;
-  font-size: 1em;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  background-color: maroon;
+  color: white;
   text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
 }
 
-.shop-button:hover {
-  background-color: #e6594f;
-}
+footer {
+  background-color: #111;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  }
